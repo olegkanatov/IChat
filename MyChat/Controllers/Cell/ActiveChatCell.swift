@@ -38,7 +38,10 @@ class ActiveChatCell: UICollectionViewCell, SelfConfiguringCell {
     }
 }
 
+//-------------------------------------------------
 // MARK: - Setup constraints
+//-------------------------------------------------
+
 extension ActiveChatCell {
     private func setupConstraints() {
         friendImageView.translatesAutoresizingMaskIntoConstraints = false

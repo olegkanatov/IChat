@@ -30,7 +30,10 @@ class SetupProfileViewController: UIViewController {
     }
 }
 
+//-------------------------------------------------
 // MARK: - Setup constraints
+//-------------------------------------------------
+
 extension SetupProfileViewController {
     private func setupConstraints() {
         let fullNameStackView = UIStackView(arrangedSubviews: [fullNameLabel, fullNameTextField],

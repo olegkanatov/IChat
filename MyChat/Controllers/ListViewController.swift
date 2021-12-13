@@ -72,7 +72,10 @@ class ListViewController: UIViewController {
     }
 }
 
-// MARK: - Data Source
+//-------------------------------------------------
+// MARK: - DataSource
+//-------------------------------------------------
+
 extension ListViewController {
     
     private func createDataSource() {
@@ -101,7 +104,10 @@ extension ListViewController {
     }
 }
 
+//-------------------------------------------------
 // MARK: - Setup layout
+//-------------------------------------------------
+
 extension ListViewController {
     private func createCompositionalLayout() -> UICollectionViewLayout {
         let layout = UICollectionViewCompositionalLayout { (senctionIndex, layoutEnvironment) -> NSCollectionLayoutSection? in
@@ -173,7 +179,10 @@ extension ListViewController {
     }
 }
 
+//-------------------------------------------------
 // MARK: - UISearchBarDelegate
+//-------------------------------------------------
+
 extension ListViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         print(searchText)

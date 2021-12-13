@@ -62,7 +62,7 @@ class PeopleViewController: UIViewController {
         var snapshot = NSDiffableDataSourceSnapshot<Section, MUser>()
         snapshot.appendSections([.users])
         snapshot.appendItems(filtered, toSection: .users)
-
+        
         dataSource?.apply(snapshot, animatingDifferences: true)
     }
 }
@@ -93,7 +93,10 @@ extension PeopleViewController {
     }
 }
 
+//-------------------------------------------------
 // MARK: - Setup layout
+//-------------------------------------------------
+
 extension PeopleViewController {
     private func createCompositionalLayout() -> UICollectionViewLayout {
         let layout = UICollectionViewCompositionalLayout { (senctionIndex, layoutEnvironment) -> NSCollectionLayoutSection? in
@@ -101,7 +104,7 @@ extension PeopleViewController {
             guard let section = Section(rawValue: senctionIndex) else {
                 fatalError("Unknown section kind")
             }
-        
+            
             switch section {
             case .users:
                 return self.createUsersSection()
@@ -144,7 +147,10 @@ extension PeopleViewController {
     }
 }
 
+//-------------------------------------------------
 // MARK: - UISearchBarDelegate
+//-------------------------------------------------
+
 extension PeopleViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         reloadData(with: searchText)

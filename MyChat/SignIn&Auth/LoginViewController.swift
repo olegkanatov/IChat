@@ -39,7 +39,10 @@ class LoginViewController: UIViewController {
     }
 }
 
+//-------------------------------------------------
 // MARK: - Setup constraints
+//-------------------------------------------------
+
 extension LoginViewController {
     private func setupConstraints() {
         let loginWithView = ButtonFormView(label: loginWithLabel, button: googleButton)
