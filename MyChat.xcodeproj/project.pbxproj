@@ -49,6 +49,8 @@
 		19B5B2312767723C002BA223 /* waitingChats.json in Resources */ = {isa = PBXBuildFile; fileRef = 19B5B22E2767723C002BA223 /* waitingChats.json */; };
 		19B5B2322767723C002BA223 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 19B5B22F2767723C002BA223 /* users.json */; };
 		19BC79CC2768AA7C00D91941 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC79CB2768AA7C00D91941 /* AuthService.swift */; };
+		19BC79CE2768B16800D91941 /* Validators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC79CD2768B16800D91941 /* Validators.swift */; };
+		19BC79D02768B58600D91941 /* AuthError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC79CF2768B58600D91941 /* AuthError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +96,8 @@
 		19B5B22E2767723C002BA223 /* waitingChats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = waitingChats.json; path = "../../../Downloads/25. урок/IChat/waitingChats.json"; sourceTree = "<group>"; };
 		19B5B22F2767723C002BA223 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = users.json; path = "../../../Downloads/25. урок/IChat/users.json"; sourceTree = "<group>"; };
 		19BC79CB2768AA7C00D91941 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		19BC79CD2768B16800D91941 /* Validators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validators.swift; sourceTree = "<group>"; };
+		19BC79CF2768B58600D91941 /* AuthError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,7 @@
 				19B5B20A27676F10002BA223 /* SignIn&Auth */,
 				19B5B20727676E3C002BA223 /* Protocols */,
 				19B5B1E927676BB0002BA223 /* Extensions */,
+				19BC79D12768B76300D91941 /* Helpers */,
 				19B5B22D2767723C002BA223 /* activeChats.json */,
 				19B5B22F2767723C002BA223 /* users.json */,
 				19B5B22E2767723C002BA223 /* waitingChats.json */,
@@ -245,6 +250,15 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		19BC79D12768B76300D91941 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				19BC79CD2768B16800D91941 /* Validators.swift */,
+				19BC79CF2768B58600D91941 /* AuthError.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -332,8 +346,10 @@
 				19B5B21527677091002BA223 /* MainTabBarController.swift in Sources */,
 				19B5B1EF27676BF8002BA223 /* InsertableTextField.swift in Sources */,
 				19B5B1E827676A6F002BA223 /* UIFont + Extension.swift in Sources */,
+				19BC79D02768B58600D91941 /* AuthError.swift in Sources */,
 				19B5B20427676D68002BA223 /* StackView + Extension.swift in Sources */,
 				19B5B2202767712C002BA223 /* ActiveChatCell.swift in Sources */,
+				19BC79CE2768B16800D91941 /* Validators.swift in Sources */,
 				19B5B21B276770E0002BA223 /* ProfileViewController.swift in Sources */,
 				19B5B1FE27676D1A002BA223 /* Label + Extension.swift in Sources */,
 				19B5B1F527676C7D002BA223 /* GradientView.swift in Sources */,

@@ -41,7 +41,7 @@ class SignUpViewController: UIViewController {
     @objc private func signUpButtonTapped() {
         AuthService.shared.register(email: emailTextField.text, password: passwordTextField.text, confirmPassword: confirmPasswordTextField.text) { result in
             switch result {
-            case .success(let user):
+            case .success(_):
                 self.showAlert(with: "Successfully!", and: "You are registered.")
             case .failure(let error):
                 self.showAlert(with: "Error!", and: error.localizedDescription)
