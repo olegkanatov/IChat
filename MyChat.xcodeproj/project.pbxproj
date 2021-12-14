@@ -48,6 +48,7 @@
 		19B5B2302767723C002BA223 /* activeChats.json in Resources */ = {isa = PBXBuildFile; fileRef = 19B5B22D2767723C002BA223 /* activeChats.json */; };
 		19B5B2312767723C002BA223 /* waitingChats.json in Resources */ = {isa = PBXBuildFile; fileRef = 19B5B22E2767723C002BA223 /* waitingChats.json */; };
 		19B5B2322767723C002BA223 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 19B5B22F2767723C002BA223 /* users.json */; };
+		19BC79CC2768AA7C00D91941 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC79CB2768AA7C00D91941 /* AuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +93,7 @@
 		19B5B22D2767723C002BA223 /* activeChats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = activeChats.json; path = "../../../Downloads/25. урок/IChat/activeChats.json"; sourceTree = "<group>"; };
 		19B5B22E2767723C002BA223 /* waitingChats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = waitingChats.json; path = "../../../Downloads/25. урок/IChat/waitingChats.json"; sourceTree = "<group>"; };
 		19B5B22F2767723C002BA223 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = users.json; path = "../../../Downloads/25. урок/IChat/users.json"; sourceTree = "<group>"; };
+		19BC79CB2768AA7C00D91941 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,13 +128,13 @@
 		19B5B1D027675EAD002BA223 /* MyChat */ = {
 			isa = PBXGroup;
 			children = (
-				19B5B228276771B3002BA223 /* Model */,
+				19B5B1D127675EAD002BA223 /* AppDelegate.swift */,
+				19B5B1D327675EAD002BA223 /* SceneDelegate.swift */,
+				19BC79CA2768AA1C00D91941 /* Services */,
 				19B5B2132767707B002BA223 /* Controllers */,
 				19B5B20A27676F10002BA223 /* SignIn&Auth */,
 				19B5B20727676E3C002BA223 /* Protocols */,
 				19B5B1E927676BB0002BA223 /* Extensions */,
-				19B5B1D127675EAD002BA223 /* AppDelegate.swift */,
-				19B5B1D327675EAD002BA223 /* SceneDelegate.swift */,
 				19B5B22D2767723C002BA223 /* activeChats.json */,
 				19B5B22F2767723C002BA223 /* users.json */,
 				19B5B22E2767723C002BA223 /* waitingChats.json */,
@@ -164,12 +166,12 @@
 				19B5B1E527676A3A002BA223 /* UIButton + Extension.swift */,
 				19B5B1F927676CEC002BA223 /* UIViewController + Extension.swift */,
 				19B5B1FB27676D04002BA223 /* UIView + Extension.swift */,
+				19B5B20527676D88002BA223 /* SegmentedControl + Extension.swift */,
 				19B5B1FD27676D1A002BA223 /* Label + Extension.swift */,
 				19B5B1E727676A6F002BA223 /* UIFont + Extension.swift */,
 				19B5B1FF27676D35002BA223 /* UIColor + Extension.swift */,
 				19B5B20127676D53002BA223 /* UIImageView + Extension.swift */,
 				19B5B20327676D68002BA223 /* StackView + Extension.swift */,
-				19B5B20527676D88002BA223 /* SegmentedControl + Extension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -232,6 +234,15 @@
 				19B5B22B276771D5002BA223 /* MChat.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		19BC79CA2768AA1C00D91941 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				19BC79CB2768AA7C00D91941 /* AuthService.swift */,
+				19B5B228276771B3002BA223 /* Model */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,6 +349,7 @@
 				19B5B2122767703C002BA223 /* SetupProfileViewController.swift in Sources */,
 				19B5B20027676D35002BA223 /* UIColor + Extension.swift in Sources */,
 				19B5B22A276771C2002BA223 /* MUser.swift in Sources */,
+				19BC79CC2768AA7C00D91941 /* AuthService.swift in Sources */,
 				19B5B1D227675EAD002BA223 /* AppDelegate.swift in Sources */,
 				19B5B219276770C6002BA223 /* PeopleViewController.swift in Sources */,
 				19B5B20E27676FDB002BA223 /* SignUpViewController.swift in Sources */,
