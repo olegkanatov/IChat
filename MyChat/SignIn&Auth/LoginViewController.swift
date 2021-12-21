@@ -7,6 +7,8 @@
 
 
 import UIKit
+import GoogleSignIn
+import Firebase
 
 class LoginViewController: UIViewController {
     
@@ -41,6 +43,33 @@ class LoginViewController: UIViewController {
         
         loginButton.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
         signUpButton.addTarget(self, action: #selector(signUpButtonTapped), for: .touchUpInside)
+        googleButton.addTarget(self, action: #selector(googleButtonTapped), for: .touchUpInside)
+    }
+    
+    @objc private func googleButtonTapped() {
+        
+        AuthService.shared.googleLogin(viewController: self) { result in
+            switch result {
+                
+            case .success(let user):
+                FirestoreService.shared.getUserData(user: user) { result in
+                    switch result {
+                    case .success(let muser):
+                        self.showAlert(with: "Successfully!", and: "You are logged in!") {
+                            let mainTabBar = MainTabBarController(currentUser: muser)
+                            mainTabBar.modalPresentationStyle = .fullScreen
+                            self.present(mainTabBar, animated: true, completion: nil)
+                        }
+                    case .failure(_):
+                        self.showAlert(with: "Successfully!", and: "You are registered!") {
+                            self.present(SetupProfileViewController(currentUser: user), animated: true, completion: nil)
+                        }
+                    }
+                }
+            case .failure(let error):
+                self.showAlert(with: "Error", and: error.localizedDescription)
+            }
+        }
     }
     
     @objc private func loginButtonTapped() {
@@ -83,8 +112,8 @@ extension LoginViewController {
                                          axis: .vertical,
                                          spacing: 0)
         let passwordStackView = UIStackView(arrangedSubviews: [passwordLabel, passwordTextField],
-        axis: .vertical,
-        spacing: 0)
+                                            axis: .vertical,
+                                            spacing: 0)
         
         loginButton.heightAnchor.constraint(equalToConstant: 60).isActive = true
         let stackView = UIStackView(arrangedSubviews: [
@@ -93,7 +122,7 @@ extension LoginViewController {
             emailStackView,
             passwordStackView,
             loginButton
-            ],
+        ],
                                     axis: .vertical,
                                     spacing: 40)
         
