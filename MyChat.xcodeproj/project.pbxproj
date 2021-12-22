@@ -18,6 +18,8 @@
 		198E66F72771FABF00E92CE0 /* UIImage + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198E66F62771FABE00E92CE0 /* UIImage + Extension.swift */; };
 		198E66F927733E4F00E92CE0 /* ListenerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198E66F827733E4F00E92CE0 /* ListenerService.swift */; };
 		198E66FD2773463100E92CE0 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 198E66FC2773463100E92CE0 /* SDWebImage */; };
+		198E66FF27734C7200E92CE0 /* UIApplication + Extansion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198E66FE27734C7200E92CE0 /* UIApplication + Extansion.swift */; };
+		198E670127734FEF00E92CE0 /* MMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198E670027734FEF00E92CE0 /* MMessage.swift */; };
 		19B5B1D227675EAD002BA223 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B5B1D127675EAD002BA223 /* AppDelegate.swift */; };
 		19B5B1D427675EAD002BA223 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B5B1D327675EAD002BA223 /* SceneDelegate.swift */; };
 		19B5B1DB27675EB0002BA223 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19B5B1DA27675EB0002BA223 /* Assets.xcassets */; };
@@ -69,6 +71,8 @@
 		198E66F42771F78D00E92CE0 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		198E66F62771FABE00E92CE0 /* UIImage + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage + Extension.swift"; sourceTree = "<group>"; };
 		198E66F827733E4F00E92CE0 /* ListenerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenerService.swift; sourceTree = "<group>"; };
+		198E66FE27734C7200E92CE0 /* UIApplication + Extansion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication + Extansion.swift"; sourceTree = "<group>"; };
+		198E670027734FEF00E92CE0 /* MMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMessage.swift; sourceTree = "<group>"; };
 		19B5B1CE27675EAD002BA223 /* MyChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19B5B1D127675EAD002BA223 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19B5B1D327675EAD002BA223 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -199,6 +203,7 @@
 				19B5B1E527676A3A002BA223 /* UIButton + Extension.swift */,
 				19B5B1F927676CEC002BA223 /* UIViewController + Extension.swift */,
 				19B5B1FB27676D04002BA223 /* UIView + Extension.swift */,
+				198E66FE27734C7200E92CE0 /* UIApplication + Extansion.swift */,
 				19B5B20527676D88002BA223 /* SegmentedControl + Extension.swift */,
 				19B5B1FD27676D1A002BA223 /* Label + Extension.swift */,
 				19B5B1E727676A6F002BA223 /* UIFont + Extension.swift */,
@@ -267,6 +272,7 @@
 			children = (
 				19B5B229276771C2002BA223 /* MUser.swift */,
 				19B5B22B276771D5002BA223 /* MChat.swift */,
+				198E670027734FEF00E92CE0 /* MMessage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -391,6 +397,7 @@
 				19BC79D02768B58600D91941 /* AuthError.swift in Sources */,
 				19B5B20427676D68002BA223 /* StackView + Extension.swift in Sources */,
 				19B5B2202767712C002BA223 /* ActiveChatCell.swift in Sources */,
+				198E66FF27734C7200E92CE0 /* UIApplication + Extansion.swift in Sources */,
 				19BC79CE2768B16800D91941 /* Validators.swift in Sources */,
 				19B5B21B276770E0002BA223 /* ProfileViewController.swift in Sources */,
 				19B5B1FE27676D1A002BA223 /* Label + Extension.swift in Sources */,
@@ -418,6 +425,7 @@
 				19B5B21D276770F9002BA223 /* ChatRequestViewController.swift in Sources */,
 				19B5B1FC27676D04002BA223 /* UIView + Extension.swift in Sources */,
 				19B5B20227676D53002BA223 /* UIImageView + Extension.swift in Sources */,
+				198E670127734FEF00E92CE0 /* MMessage.swift in Sources */,
 				19B5B1D427675EAD002BA223 /* SceneDelegate.swift in Sources */,
 				19B5B22427677166002BA223 /* UserCell.swift in Sources */,
 				19B5B1FA27676CEC002BA223 /* UIViewController + Extension.swift in Sources */,
