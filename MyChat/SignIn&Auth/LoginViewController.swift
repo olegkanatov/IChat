@@ -49,8 +49,8 @@ class LoginViewController: UIViewController {
     @objc private func googleButtonTapped() {
         
         AuthService.shared.googleLogin(viewController: self) { result in
+            
             switch result {
-                
             case .success(let user):
                 FirestoreService.shared.getUserData(user: user) { result in
                     switch result {
